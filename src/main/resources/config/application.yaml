@@ -1,0 +1,7 @@
+application:
+  yaml:
+    config:
+      value: application.yaml.config.value
+
+myconfig:
+  configValue: myconfig.configValue
