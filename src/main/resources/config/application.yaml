@@ -5,3 +5,23 @@ application:
 
 myconfig:
   configValue: myconfig.configValue
+
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /console
+  datasource:
+    schema: classpath:h2/schema.sql
+    data: classpath:h2/data.sql
+    url: jdbc:h2:mem:h2test;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    platform: h2
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+logging:
+  level.* : debug
+
