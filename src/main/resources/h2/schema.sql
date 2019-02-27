@@ -1,5 +1,9 @@
-CREATE TABLE `post` (
-  `id` int(11) unsigned NOT NULL primary key AUTO_INCREMENT,
-  `title` varchar(20) DEFAULT NULL,
-  `body` varchar(50) DEFAULT NULL,
-);
+CREATE TABLE `Post` (
+   `Id` int(11) NOT NULL AUTO_INCREMENT,
+   `UserId` int(11) NOT NULL DEFAULT '0',
+   `Title` varchar(100) NOT NULL DEFAULT '',
+   `Body` varchar (1000) NOT NULL DEFAULT '',
+   `CreateTime` datetime NOT NULL DEFAULT '0001-01-01 00:00:00',
+   `UpdateTime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+   PRIMARY KEY (`Id`),
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

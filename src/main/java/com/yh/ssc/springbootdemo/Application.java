@@ -1,6 +1,7 @@
 package com.yh.ssc.springbootdemo;
 
 import com.yh.ssc.springbootdemo.config.MyConfigPros;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -9,6 +10,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
  * Create by yuanhaohy on 2019/2/22.
  */
 @SpringBootApplication
+@MapperScan("com.yh.ssc.springbootdemo.repository.mapper")
 @EnableConfigurationProperties(MyConfigPros.class)
 public class Application {
 

@@ -11,6 +11,7 @@ spring:
     console:
       enabled: true
       path: /console
+
   datasource:
     schema: classpath:h2/schema.sql
     data: classpath:h2/data.sql
@@ -19,9 +20,13 @@ spring:
     platform: h2
     username: sa
     password:
+
   jpa:
     hibernate:
       ddl-auto: update
+
 logging:
   level.* : debug
 
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
