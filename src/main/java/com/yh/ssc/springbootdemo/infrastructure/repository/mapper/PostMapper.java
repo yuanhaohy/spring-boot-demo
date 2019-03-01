@@ -1,6 +1,6 @@
-package com.yh.ssc.springbootdemo.repository.mapper;
+package com.yh.ssc.springbootdemo.infrastructure.repository.mapper;
 
-import com.yh.ssc.springbootdemo.repository.dto.Post;
+import com.yh.ssc.springbootdemo.infrastructure.repository.dto.Post;
 
 public interface PostMapper {
 

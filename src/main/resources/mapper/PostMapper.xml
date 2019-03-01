@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.yh.ssc.springbootdemo.repository.mapper.PostMapper">
-  <resultMap id="BaseResultMap" type="com.yh.ssc.springbootdemo.repository.dto.Post">
+<mapper namespace="com.yh.ssc.springbootdemo.infrastructure.repository.mapper.PostMapper">
+  <resultMap id="BaseResultMap" type="com.yh.ssc.springbootdemo.infrastructure.repository.dto.Post">
     <id column="Id" jdbcType="INTEGER" property="id" />
     <result column="UserId" jdbcType="INTEGER" property="userId" />
     <result column="Title" jdbcType="VARCHAR" property="title" />
@@ -22,7 +22,7 @@
     delete from Post
     where Id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insertSelective" parameterType="com.yh.ssc.springbootdemo.repository.dto.Post">
+  <insert id="insertSelective" parameterType="com.yh.ssc.springbootdemo.infrastructure.repository.dto.Post">
     insert into Post
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -65,7 +65,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.yh.ssc.springbootdemo.repository.dto.Post">
+  <update id="updateByPrimaryKeySelective" parameterType="com.yh.ssc.springbootdemo.infrastructure.repository.dto.Post">
     update Post
     <set>
       <if test="userId != null">

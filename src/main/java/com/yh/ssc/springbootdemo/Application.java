@@ -10,7 +10,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
  * Create by yuanhaohy on 2019/2/22.
  */
 @SpringBootApplication
-@MapperScan("com.yh.ssc.springbootdemo.repository.mapper")
+@MapperScan("com.yh.ssc.springbootdemo.infrastructure.repository.mapper")
 @EnableConfigurationProperties(MyConfigPros.class)
 public class Application {
 

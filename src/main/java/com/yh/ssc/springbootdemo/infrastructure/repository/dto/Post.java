@@ -1,4 +1,4 @@
-package com.yh.ssc.springbootdemo.repository.dto;
+package com.yh.ssc.springbootdemo.infrastructure.repository.dto;
 
 import java.io.Serializable;
 import java.util.Date;
