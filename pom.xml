@@ -44,47 +44,6 @@
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>1.2.0</version>
         </dependency>
-
-        <!--&lt;!&ndash; 单测工具 &ndash;&gt;-->
-        <!--<dependency>-->
-            <!--<groupId>com.meituan.beauty</groupId>-->
-            <!--<artifactId>beauty-arch-test-unit</artifactId>-->
-            <!--<version>1.0.5</version>-->
-            <!--<exclusions>-->
-                <!--<exclusion>-->
-                    <!--<artifactId>powermock-api-mockito</artifactId>-->
-                    <!--<groupId>org.powermock</groupId>-->
-                <!--</exclusion>-->
-                <!--<exclusion>-->
-                    <!--<artifactId>powermock-api-mockito-common</artifactId>-->
-                    <!--<groupId>org.powermock</groupId>-->
-                <!--</exclusion>-->
-                <!--<exclusion>-->
-                    <!--<artifactId>powermock-core</artifactId>-->
-                    <!--<groupId>org.powermock</groupId>-->
-                <!--</exclusion>-->
-                <!--<exclusion>-->
-                    <!--<artifactId>powermock-module-junit4</artifactId>-->
-                    <!--<groupId>org.powermock</groupId>-->
-                <!--</exclusion>-->
-                <!--<exclusion>-->
-                    <!--<artifactId>powermock-module-junit4-common</artifactId>-->
-                    <!--<groupId>org.powermock</groupId>-->
-                <!--</exclusion>-->
-                <!--<exclusion>-->
-                    <!--<artifactId>powermock-module-testng</artifactId>-->
-                    <!--<groupId>org.powermock</groupId>-->
-                <!--</exclusion>-->
-                <!--<exclusion>-->
-                    <!--<artifactId>powermock-module-testng-common</artifactId>-->
-                    <!--<groupId>org.powermock</groupId>-->
-                <!--</exclusion>-->
-                <!--<exclusion>-->
-                    <!--<artifactId>powermock-reflect</artifactId>-->
-                    <!--<groupId>org.powermock</groupId>-->
-                <!--</exclusion>-->
-            <!--</exclusions>-->
-        <!--</dependency>-->
         
     </dependencies>
 
